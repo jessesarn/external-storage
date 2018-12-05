@@ -1,0 +1,14 @@
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: nfs
+provisioner: example.com/nfs
+mountOptions:
+  - hard
+  - noatime
+  - vers=4.1
+  - rsize=1048576
+  - wsize=1048576
+  - noresvport
+  - intr
+

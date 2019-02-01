@@ -4,6 +4,7 @@ cd /tmp
 git clone https://github.com/jessesarn/external-storage.git
 cd external-storage
 git checkout integreatly-nfs
+cd nfs
 
 oc project openshift-infra
 oc create -f deploy/integreatly/scc.yaml
